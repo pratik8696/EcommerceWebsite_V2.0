@@ -8,6 +8,18 @@
   color:#032D23;
   
 }
+.row{
+  width:auto;
+}
+dl,ol,ul{
+  margin-bottom: 0px;
+}
+.navpos{
+  position:sticky;
+}
+.card-title{
+  overflow:hidden;
+}
 .card-body{
   overflow:hidden;
 }
@@ -34,6 +46,14 @@
   float:right;
   margin-top:0.5rem;
   margin-left:0.8rem;
+  overflow: hidden;
+}
+.iconslist{
+  width:80px;
+  display: inline;
+}
+h1,h2,h3,h4,h5,h6,p{
+  overflow:hidden;
 }
 .logoinnav{
   margin-left: 2rem;

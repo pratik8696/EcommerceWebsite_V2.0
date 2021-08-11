@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 function Header() {
     return (
         <div>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top position-sticky navpos">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#"><img src="/logo.png" className="logoinnav">
                     </img><h5 className="logoheading">Aapki Dukaan</h5></a>
@@ -20,16 +20,10 @@ function Header() {
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Features</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Pricing</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">About</a>
+                                <a className="nav-link" href="#">Top Deals</a>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Departments</a>
                                 <div className="dropdown-menu">
                                     <a className="dropdown-item" href="#">Action</a>
                                     <a className="dropdown-item" href="#">Another action</a>
@@ -38,8 +32,17 @@ function Header() {
                                     <a className="dropdown-item" href="#">Separated link</a>
                                 </div>
                             </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Contact Us</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">About Us</a>
+                            </li>
                         </ul>
                         <form className="d-flex">
+                            <ul className="me-3">
+                                <li>Login</li>
+                                </ul>
                             <Link to="/profile"><i className="far fa-user ms-3 me-3"></i></Link>
                             <Link to="/cart"><i className="fas fa-shopping-cart ms-3 me-3"></i></Link>
                         </form>

@@ -1,9 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Link, Switch, Route, useHistory } from "react-router-dom";
-import Login from "./Login";
-import Signup from "./Signup";
-import Profile from "./Profile";
-import LandingPage from "./LandingPage";
+import Login from "./components/Screens/Login";
+import Signup from "./components/Screens/Signup";
+import Profile from "./components/Screens/Profile";
+import LandingPage from "./components/Screens/LandingPage";
+
 
 function App() {
   let history = useHistory();

@@ -1,9 +1,9 @@
 import React from 'react'
-import { InputGroup } from 'react-bootstrap';
-import Header from "./Header";
-import Inputgroup from './Inputgroup';
-import SlideShow from "./Slideshow";
-import Contents from "./Contents";
+import Header from "../Sub-comp/Header";
+import Inputgroup from '../Partials/Inputgroup';
+import SlideShow from "../Partials/Slideshow";
+import Contents from "../Partials/Contents";
+
 // import Footer from "./Footer";
 
 
@@ -22,4 +22,4 @@ function LandingPage() {
     )
 }
 
-export default LandingPage
+export default LandingPage;

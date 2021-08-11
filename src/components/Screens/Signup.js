@@ -1,6 +1,6 @@
 import React from "react";
-import Form from "./Form";
-import Input from "./Input";
+import Form from "../Sub-comp/Form";
+import Input from "../Partials/Input";
 import { Button, Row, Col, Image } from "react-bootstrap";
 import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 

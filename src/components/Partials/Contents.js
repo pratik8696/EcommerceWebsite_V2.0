@@ -2,7 +2,7 @@ import React from 'react'
 import { Row, Col, Image, Card, Button } from "react-bootstrap"
 import ProductCard from './Card'
 import productcontent from "./productcontent";
-
+import Producticonlist from '../Partials/producticonlist';
 
 function Contents() {
     return (
@@ -16,6 +16,7 @@ function Contents() {
                 </Col >
                 <Col lg={3} xl={3} ></Col>
             </Row>
+            <Producticonlist />
             <Row style={{ paddingLeft: "10%", paddingRight: "10%", paddingTop: "5%" }}>
                 {productcontent.map((content) => {
                     return (
