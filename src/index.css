@@ -48,9 +48,32 @@ dl,ol,ul{
   margin-left:0.8rem;
   overflow: hidden;
 }
+
+.iconlistheading{
+  color:black;
+  animation:fadecolor 6s infinite;
+}
+@keyframes fadecolor {
+  from {color:black;}
+  to {color:white;}
+}
+.fit{
+  object-fit: contain;
+}
 .iconslist{
-  width:80px;
-  display: inline;
+  background-color: #FCE97F;
+  align-items: center;
+  animation: fadebackground 6s infinite;
+}
+/* .iconslist:hover{
+  transition: 2s;
+  background-color:#89C74A;
+  color:white;
+  animation: fadebackground 6s infinite;
+} */
+@keyframes fadebackground {
+  from {background-color: #FCE97F;color:black;}
+  to {background-color: #2EB07B;color:white;}
 }
 h1,h2,h3,h4,h5,h6,p{
   overflow:hidden;

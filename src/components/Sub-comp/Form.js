@@ -7,9 +7,7 @@ function Form() {
         <div>
             <Input placeholder="Email" type="email"/>
             <Input placeholder="Password" type="password" />
-            <div className="d-grid">
-            <Button variant="success">Login</Button>
-            </div>
+            
         </div>
     )
 }
