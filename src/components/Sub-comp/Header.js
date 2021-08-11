@@ -41,7 +41,7 @@ function Header() {
                         </ul>
                         <form className="d-flex">
                             <ul className="me-3">
-                                <li>Login</li>
+                                <Link to="/login"><li>Login</li></Link>
                                 </ul>
                             <Link to="/profile"><i className="far fa-user ms-3 me-3"></i></Link>
                             <Link to="/cart"><i className="fas fa-shopping-cart ms-3 me-3"></i></Link>

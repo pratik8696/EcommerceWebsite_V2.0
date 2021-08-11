@@ -8,10 +8,11 @@ function Profile() {
         <div>
             <Row>
                 <Col lg={6} md={6} sm={12} xl={6}>
-                    <div className="brand">
+                    <Link to="/"><div className="brand">
                         <img className="logo" src="/logo.png"></img>
                         <h2>Aapki Dukaan</h2>
                     </div>
+                    </Link>
                     <div className="form-div">
                         <img src="/user.png" className="user-icon ms-4 mb-4"></img>
                         <ListGroup variant="flush">

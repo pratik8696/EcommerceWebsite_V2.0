@@ -1,10 +1,17 @@
-import React from "react";
+import React,{useState} from "react";
 import Form from "../Sub-comp/Form";
 import Input from "../Partials/Input";
 import { Button, Row, Col, Image } from "react-bootstrap";
 import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
 
 function Signup() {
+
+    const [user, setuser] = useState(false);
+
+    function notuser() {
+        setuser(true);
+    }
+
     return (
         <div>
             <Row>
@@ -17,20 +24,23 @@ function Signup() {
                         <div className="welcome-div">
                             <h5>Welcome to our family <span >Aapki Dukaan...</span></h5>
                         </div>
-                        <h1 className="mb-4">Sign Up</h1>
+                        <h1 className="mb-4">{user?"Login":"Sign Up"}</h1>
 
                         <Input placeholder="Full Name" type="email" />
                         <Input placeholder="Phone Number" type="password" />
-                        <Form />
-                        <div className="new-acc">
-                            <h6>Already have an account ? <span><Link to="/"> Get One </Link>
-                                </span>
+                        {user ? "" : (<div>
+                            <Form />
+                        </div>)}
+                        
+                        {user ? "" : (<div className="new-acc">
+                            <h6>Already have an account ? <span > Get One </span>
                             </h6>
-                        </div>
+                        </div>)}
+                        
                         <div className="new-acc">
-                            <h6>Check out the profile page here <span><Link to="/profile"> Click here </Link></span>
-                            </h6>
+                            <h6>Don't have an account ? <span onClick={notuser}> Get One</span></h6>
                         </div>
+
                     </div>
                 </Col >
                 <Col lg={6} xl={6} md={6} >

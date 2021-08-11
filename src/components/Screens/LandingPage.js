@@ -4,7 +4,7 @@ import Inputgroup from '../Partials/Inputgroup';
 import SlideShow from "../Partials/Slideshow";
 import Contents from "../Partials/Contents";
 
-// import Footer from "./Footer";
+// import Footer from "../Sub-comp/Footer";
 
 
 function LandingPage() {
