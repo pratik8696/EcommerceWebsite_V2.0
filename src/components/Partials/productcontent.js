@@ -25,6 +25,7 @@ const products = [
         rating: 4.0,
         numReviews: 8,
     },
+
     {
         _id: '3',
         name: 'Cannon EOS 80D DSLR Camera',
@@ -77,6 +78,32 @@ const products = [
         countInStock: 0,
         rating: 4,
         numReviews: 12,
+    },
+    {
+        _id: '7',
+        name: 'iPhone 11 Pro 256GB Memory',
+        image: '/images/carrot.jpg',
+        description:
+            'Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life',
+        brand: 'Apple',
+        category: 'Electronics',
+        price: 599.99,
+        countInStock: 7,
+        rating: 4.0,
+        numReviews: 8,
+    },
+    {
+        _id: '8',
+        name: 'iPhone 11 Pro 256GB Memory',
+        image: '/images/lays.jpg',
+        description:
+            'Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life',
+        brand: 'Apple',
+        category: 'Electronics',
+        price: 599.99,
+        countInStock: 7,
+        rating: 4.0,
+        numReviews: 8,
     },
 ]
 

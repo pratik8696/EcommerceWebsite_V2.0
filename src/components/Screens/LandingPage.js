@@ -3,7 +3,7 @@ import Header from "../Sub-comp/Header";
 import Inputgroup from '../Partials/Inputgroup';
 import SlideShow from "../Partials/Slideshow";
 import Contents from "../Partials/Contents";
-// import Footer from "../Sub-comp/Footer";
+import Footer from "../Sub-comp/Footer";
 
 
 function LandingPage() {
@@ -14,8 +14,10 @@ function LandingPage() {
 <Inputgroup />
 <SlideShow />
 <Contents />
+                <img src="/testimonials.png" style={{ width: "100%", marginTop: "2rem",marginBottom: "2rem"}} />
+                <Contents />
 </main>
-{/* <Footer /> */}
+<Footer />
             
         </div>
     )

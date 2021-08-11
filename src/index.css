@@ -60,6 +60,25 @@ dl,ol,ul{
 .fit{
   object-fit: contain;
 }
+.mainfooter {
+  color: white;
+  background-color: black;
+  padding-top: 3rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.footerhr{
+  border:white;
+  border-width: 4px solid white;
+  background-color: white;
+}
+.footerhead{
+  color:white;
+  font-family:Poppins;
+  overflow:hidden;
+  text-decoration: none;
+}
 .iconslist{
   background-color: #FCE97F;
   align-items: center;
