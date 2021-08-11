@@ -15,14 +15,19 @@ function Profile() {
                     <div className="form-div">
                         <img src="/user.png" className="user-icon ms-4 mb-4"></img>
                         <ListGroup variant="flush">
-                            <ListGroup.Item>Name : </ListGroup.Item>
-                            <ListGroup.Item>Name : </ListGroup.Item>
-                            <ListGroup.Item>Name : </ListGroup.Item>
-                            <ListGroup.Item>Name : </ListGroup.Item>
-                            <ListGroup.Item>Name : </ListGroup.Item>
+                            <ListGroup.Item>FName : </ListGroup.Item>
+                            <ListGroup.Item>LName : </ListGroup.Item>
+                            <ListGroup.Item>Email : </ListGroup.Item>
+                            <ListGroup.Item>Phoneno : </ListGroup.Item>
+                            <ListGroup.Item>Address : </ListGroup.Item>
                         </ListGroup>
-                        
+                        <div className="new-acc">
+                            <h6>Already have an account ? <span><Link to="/"> Get One </Link>
+                            </span>
+                            </h6>
+                        </div>
                     </div>
+                    
                 </Col >
                 <Col lg={6} xl={6} >
                     <div className="backmg">

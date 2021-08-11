@@ -1,8 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Link, Switch, Route, useHistory} from "react-router-dom";
+import { BrowserRouter as Router, Link, Switch, Route, useHistory } from "react-router-dom";
 import Login from "./Login";
 import Signup from "./Signup";
 import Profile from "./Profile";
+import LandingPage from "./LandingPage";
 
 function App() {
   let history = useHistory();
@@ -10,15 +11,22 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/">
-    <Login />
-    </Route>
+          <LandingPage />
+        </Route>
+
+        <Route path="/login">
+          <Login />
+        </Route>
+
         <Route path="/signup">
           <Signup />
         </Route>
+
         <Route path="/profile">
           <Profile />
         </Route>
-        </Switch>
+
+      </Switch>
     </Router>
   );
 }

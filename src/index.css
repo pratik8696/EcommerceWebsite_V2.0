@@ -1,13 +1,44 @@
-@media (max-width:1200px){
+@media (max-width:773px){
   .backgroundimg{
     display: none;
   }
 }
 *{
-  background-color: white;
-  overflow: hidden;
+  overflow-x: hidden;
   color:#032D23;
-  font-family: 'Playfair Display', serif;
+  
+}
+.card-body{
+  overflow:hidden;
+}
+.contentsstartimage{
+  margin-top:3rem;
+}
+.carousel-caption{
+  background-color: black;
+}
+.card-text{
+  color:black;
+}
+.carousel-caption h3,p{
+  opacity:1;
+  color:white;
+  overflow-y: hidden;
+}
+.searchbarnavbar{
+  /* padding-left:20% ;
+  padding-right:20%; */
+  margin-top:1rem;
+}
+.logoheading{
+  float:right;
+  margin-top:0.5rem;
+  margin-left:0.8rem;
+}
+.logoinnav{
+  margin-left: 2rem;
+  height:40px;
+  width:40px;
 }
 .user-icon{
   margin-left:50%;
@@ -16,6 +47,13 @@ div .form-div{
   padding-left:20%;
   padding-right:20%;
   padding-top:10%;
+  min-height:25vh;
+}
+div .form-div
+{
+  padding-left:20%;
+  padding-right:20%;
+  padding-top:5%;
   min-height:25vh;
 }
 div .welcome-div{
@@ -28,11 +66,16 @@ div .welcome-div{
 }
 h1{
   font-size:3.75rem;
+  font-family: 'Playfair Display', serif;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Playfair Display', serif;
 }
 h2{
   font-size:1.5rem;
   display:inline;
   margin-top:20px;
+  font-family: 'Playfair Display', serif;
 }
 .logo{
   margin-right: 15px;

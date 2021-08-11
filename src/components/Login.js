@@ -20,6 +20,7 @@ function Login() {
                             <h1 className="mb-4">Login</h1>
                         
                             <Form />
+                            
                             <div className="new-acc">
                         <h6>Don't have an account ? <span><Link to="/signup"> Get One </Link>
                             </span></h6>
@@ -30,7 +31,7 @@ function Login() {
                         </div>
                     </div>
                     </Col >
-                    <Col lg={6} xl={6} >
+                    <Col lg={6} xl={6} md={6} >
                         <div className="backmg">
                             <Image src="/back.jpg" className="backgroundimg" />
                         </div>
