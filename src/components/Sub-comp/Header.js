@@ -6,8 +6,8 @@ function Header() {
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top position-sticky navpos">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#"><img src="/logo.png" className="logoinnav">
-                    </img><h5 className="logoheading">Aapki Dukaan</h5></a>
+                    <Link to="/"><span className="navbar-brand"><img src="/logo.png" className="logoinnav">
+                    </img><h5 className="logoheading">Aapki Dukaan</h5></span></Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
