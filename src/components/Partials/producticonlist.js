@@ -4,9 +4,20 @@ import list from "./list";
 
 
 function Producticonlist() {
+
     return (
         <div>
-            <Row style={{  paddingTop: "5%" ,width:"auto" }} >
+            <br />
+            <br />
+            {/* <Row>
+                <Col lg={5} xl={5}></Col>
+                <Col lg={4} xl={4}>
+                    <Image src="/hero-title.png" className="contentsstarts" ></Image>
+                </Col >
+                <Col lg={3} xl={3} ></Col>
+            </Row> */}
+
+            <Row style={{  paddingTop: "2%" ,width:"auto" }} >
                 <div>
                 <Col xl={1.5} lg={1.5} md={1.5} sm={1.5} xs={1.5}  ></Col>
                 <div style={{display:"flex",justifyContent:"center",margin:"0 auto"}}>
@@ -21,6 +32,8 @@ function Producticonlist() {
                     );
                 })}
                 </div>
+
+
                 <Col xl={1.5} lg={1.5} md={1.5} sm={1.5} xs={1.5}></Col>
                 </div>
             </Row>

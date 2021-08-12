@@ -5,18 +5,19 @@ import productcontent from "./productcontent";
 import Producticonlist from '../Partials/producticonlist';
 
 function Contents() {
+
     return (
         <div >
             <br />
             <br />
-            <Row>
+            {/* <Row>
                 <Col lg={5} xl={5}></Col>
                 <Col lg={4} xl={4}>
                     <Image src="/hero-title.png" className="contentsstarts" ></Image>
                 </Col >
                 <Col lg={3} xl={3} ></Col>
-            </Row>
-            <Producticonlist />
+            </Row> */}
+            {/* <Producticonlist //> */}
             <Row style={{ paddingLeft: "10%", paddingRight: "10%", paddingTop: "5%" }}>
                 {productcontent.map((content) => {
                     return (
