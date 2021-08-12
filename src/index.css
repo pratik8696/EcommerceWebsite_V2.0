@@ -2,11 +2,19 @@
   .backgroundimg{
     display: none;
   }
+  
+.mobileviewproduct{
+  width:100%;
+}
 }
 *{
   overflow-x: hidden;
   color:#032D23;
   
+}
+.mobileviewproduct{
+  width:40%;
+  height:auto;
 }
 .row{
   width:auto;

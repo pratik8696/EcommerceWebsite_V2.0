@@ -35,6 +35,7 @@ function LandingPage() {
                 </Row>
 <Contents />
 </main>
+            <br /><br /><br />
 <Footer />
             
         </div>

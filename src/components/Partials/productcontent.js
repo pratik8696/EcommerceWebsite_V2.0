@@ -1,12 +1,12 @@
 const products = [
     {
         _id: '1',
-        name: 'Airpods Wireless Bluetooth Headphones',
+        name: 'Exotic Brownberry',
         image: '/images/airpods.jpg',
         description:
-            'Bluetooth technology lets you connect it with compatible devices wirelessly High-quality AAC audio offers immersive listening experience Built-in microphone allows you to take calls while working',
-        brand: 'Apple',
-        category: 'Electronics',
+            'Elit anim est magna non dolore. Dolor nostrud ex occaecat consequat deserunt. Nulla qui do dolor ea adipisicing amet duis irure occaecat exercitation ut nostrud cupidatat et.',
+        brand: 'Agro Farms',
+        category: 'Fruits',
         price: 89.99,
         countInStock: 10,
         rating: 4.5,
@@ -14,24 +14,24 @@ const products = [
     },
     {
         _id: '2',
-        name: 'iPhone 11 Pro 256GB Memory',
+        name: 'Capsicum',
         image: '/images/phone.jpg',
         description:
-            'Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life',
-        brand: 'Apple',
-        category: 'Electronics',
+            'Sunt amet nisi esse sunt irure eu aute mollit aute aute fugiat. Dolore do consequat pariatur ad culpa Lorem consectetur cillum tempor aliquip fugiat elit duis aliquip. Adipisicing non irure laborum laborum culpa minim. Aliqua cillum cillum culpa do magna dolor excepteur ea minim esse in amet. Fugiat pariatur officia minim dolor. Quis occaecat pariatur ea sit aute esse Lorem. Do qui mollit cupidatat aliquip exercitation exercitation duis ullamco mollit enim voluptate ullamco aliqua magna.',
+        brand: 'Groca Farms',
+        category: 'Veggies',
         price: 599.99,
-        countInStock: 7,
+        countInStock: 0,
         rating: 4.0,
         numReviews: 8,
     },
 
     {
         _id: '3',
-        name: 'Cannon EOS 80D DSLR Camera',
+        name: 'Fresh Cauliflower',
         image: '/images/camera.jpg',
         description:
-            'Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design',
+            'Sint laborum minim consequat consequat tempor nisi et irure exercitation dolore aute. Eiusmod fugiat exercitation non proident fugiat officia. Laboris ullamco exercitation ex ipsum culpa excepteur. Adipisicing magna enim incididunt irure fugiat ipsum. Fugiat aute ipsum fugiat officia eu velit labore.',
         brand: 'Cannon',
         category: 'Electronics',
         price: 929.99,
@@ -41,10 +41,10 @@ const products = [
     },
     {
         _id: '4',
-        name: 'Sony Playstation 4 Pro White Version',
+        name: 'Oreo Biscuits',
         image: '/images/playstation.jpg',
         description:
-            'The ultimate home entertainment center starts with PlayStation. Whether you are into gaming, HD movies, television, music',
+            'Laboris incididunt dolore id tempor eu aute ea Lorem consequat officia sint mollit ipsum deserunt. Quis non voluptate deserunt fugiat adipisicing proident pariatur aliqua sint in exercitation amet aliqua minim. Amet sunt consequat ipsum esse adipisicing consectetur. Incididunt reprehenderit fugiat deserunt excepteur qui et non et ipsum.',
         brand: 'Sony',
         category: 'Electronics',
         price: 399.99,
@@ -55,12 +55,12 @@ const products = [
  
     {
         _id: '5',
-        name: 'Logitech G-Series Gaming Mouse',
+        name: 'Nestle\'s Candies',
         image: '/images/mouse.jpg',
         description:
-            'Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience',
-        brand: 'Logitech',
-        category: 'Electronics',
+            'Laborum deserunt ipsum veniam ad quis excepteur magna reprehenderit veniam occaecat consectetur laborum consequat. Anim deserunt dolore ut anim culpa id ullamco magna laboris ex. Duis incididunt anim veniam dolore labore id ad in. Nostrud nisi ipsum aliquip incididunt do anim deserunt aute sint proident.',
+        brand: 'Nestle\'s',
+        category: 'Grocery',
         price: 49.99,
         countInStock: 7,
         rating: 3.5,
@@ -68,10 +68,10 @@ const products = [
     },
     {
         _id: '6',
-        name: 'Amazon Echo Dot 3rd Generation',
+        name: 'Watermelon',
         image: '/images/alexa.jpg',
         description:
-            'Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space',
+            'Ullamco sint excepteur fugiat non incididunt consequat minim incididunt adipisicing velit aute reprehenderit ea est. Sint nostrud eiusmod deserunt cupidatat enim consequat ea in nostrud nulla veniam sit sunt. Pariatur nostrud ut ex do et nostrud magna.',
         brand: 'Amazon',
         category: 'Electronics',
         price: 29.99,
@@ -81,12 +81,12 @@ const products = [
     },
     {
         _id: '7',
-        name: 'iPhone 11 Pro 256GB Memory',
+        name: 'Carrot ',
         image: '/images/carrot.jpg',
         description:
-            'Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life',
-        brand: 'Apple',
-        category: 'Electronics',
+            'Ad pariatur dolor ipsum duis dolore commodo eu laborum deserunt quis. Nisi aliqua duis officia Lorem proident. Ea cillum cupidatat nulla nisi exercitation nulla esse. Exercitation culpa deserunt irure aliquip id dolore aliqua aliquip quis incididunt. Ex incididunt duis labore consequat laborum adipisicing ipsum nisi pariatur reprehenderit excepteur dolor in.',
+        brand: 'Agro Farms',
+        category: 'Veggies',
         price: 599.99,
         countInStock: 7,
         rating: 4.0,
@@ -94,12 +94,12 @@ const products = [
     },
     {
         _id: '8',
-        name: 'iPhone 11 Pro 256GB Memory',
+        name: 'Fritolay\'s Lays',
         image: '/images/lays.jpg',
         description:
-            'Introducing the iPhone 11 Pro. A transformative triple-camera system that adds tons of capability without complexity. An unprecedented leap in battery life',
-        brand: 'Apple',
-        category: 'Electronics',
+            'Labore reprehenderit nostrud ex irure aliquip reprehenderit eiusmod laboris veniam anim. Laborum commodo aliquip dolore anim veniam consequat esse quis labore cillum consectetur minim occaecat. Irure do ea laboris voluptate deserunt quis. Cupidatat officia non irure duis. Non tempor qui ea eu proident magna incididunt officia aliquip.',
+        brand: 'Fritolay',
+        category: 'Grocery',
         price: 599.99,
         countInStock: 7,
         rating: 4.0,

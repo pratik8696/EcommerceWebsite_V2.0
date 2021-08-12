@@ -28,7 +28,7 @@ function Signup() {
                                 : (<h5>Welcome to our family <span >Aapki Dukaan...</span></h5>)}
 
                         </div>
-                        <h1 className="mb-4">{user ? "Login" : "Sign Up"}</h1>
+                        <h1 className="mb-4">{user ? "Login" : "Sign Up" }</h1>
 
                         <Input placeholder="Full Name" type="email" />
                         <Input placeholder="Phone Number" type="password" />
@@ -44,11 +44,11 @@ function Signup() {
                             <h6>Already have an account ? <span onClick={notuser}> Get One </span>
                             </h6>
                         </div>)}
-
+                                <Link to="/">
                         <div className="d-grid">
-                            <Button variant="success">Login</Button>
+                            <Button variant="success">{user ? "Login" : "Sign Up"}</Button>
                         </div>
-
+                        </Link>
                     </div>
 
                 </Col >

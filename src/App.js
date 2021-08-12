@@ -4,6 +4,7 @@ import Login from "./components/Screens/Login";
 import Signup from "./components/Screens/Signup";
 import Profile from "./components/Screens/Profile";
 import LandingPage from "./components/Screens/LandingPage";
+import Productscreen from "./components/Screens/Productscreen";
 
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
         <Route path="/profile">
           <Profile />
         </Route>
+
+        <Route path="/product/:id" render={(props) => <Productscreen {...props} />} />
 
       </Switch>
     </Router>
