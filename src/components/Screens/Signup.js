@@ -1,17 +1,40 @@
-import React, { useState } from "react";
-import Form from "../Sub-comp/Form";
+import React, { useState, useRef } from "react";
 import Input from "../Partials/Input";
-import { Button, Row, Col, Image } from "react-bootstrap";
-import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
+import { Alert, Form, Button, Row, Col, Image } from "react-bootstrap";
+import { BrowserRouter as Router, Link, Switch, Route ,useHistory} from "react-router-dom";
+import { useAuth } from "../../contexts/AuthContext"
 
 function Signup() {
 
-    const [user, setuser] = useState(true);
+    const [error, setError] = useState("");
+    const [loading, setLoading] = useState(false);
+    const emailRef = useRef()
+    const passwordRef = useRef()
+    const passwordConfirmRef = useRef()
+    const history=useHistory();
 
-    function notuser() {
-        setuser(!user);
+    const { signup} = useAuth()
+
+    async function handleSubmit(e) {
+        e.preventDefault()
+
+        if (passwordConfirmRef.current.value !== passwordRef.current.value) {
+            return setError("Passwords do not match!!");
+        }
+
+        try {
+            setError("");
+            setLoading(true)
+            await signup(emailRef.current.value, passwordRef.current.value)
+            history.push("/profile")
+
+        } catch {
+            setError('Failed to create an account');
+        }
+
+        setLoading(false)
+
     }
-
     return (
         <div>
             <Row>
@@ -24,31 +47,28 @@ function Signup() {
                     </Link>
                     <div className="form-div">
                         <div className="welcome-div">
-                            {user ? (<h5>Welcome back to <span >Aapki Dukaan.................</span></h5>)
-                                : (<h5>Welcome to our family <span >Aapki Dukaan...</span></h5>)}
 
+                            <h5>Welcome to our family <span >Aapki Dukaan...</span></h5>
+                            {error && <Alert variant="danger">{error}</Alert>}
                         </div>
-                        <h1 className="mb-4">{user ? "Login" : "Sign Up" }</h1>
+                        <h1 className="mb-4"> Sign Up</h1>
 
-                        <Input placeholder="Full Name" type="email" />
-                        <Input placeholder="Phone Number" type="password" />
-
-                        {user ? "" : (<div>
-                            <Form />
-
-                        </div>)}
-
-                        {user ? (<div className="new-acc mb-4">
-                            <h6>Don't have an account ? <span onClick={notuser}> Get One</span></h6>
-                        </div>) : (<div className="new-acc mb-4">
-                            <h6>Already have an account ? <span onClick={notuser}> Get One </span>
+                        <Form onSubmit={handleSubmit}>
+                            <Form.Group className="mb-3">
+                                <Form.Control placeholder="Email" type="email" ref={emailRef} />
+                            </Form.Group>
+                            <Form.Group className="mb-3">
+                                <Form.Control placeholder="Password" type="password" ref={passwordRef} />
+                            </Form.Group>
+                            <Form.Group className="mb-3">
+                                <Form.Control placeholder="Confirm Password" type="password" ref={passwordConfirmRef} />
+                            </Form.Group>
+                            <h6>Already have an account ? <span><Link to="/login"> SignIn</Link> </span>
                             </h6>
-                        </div>)}
-                                <Link to="/">
-                        <div className="d-grid">
-                            <Button variant="success">{user ? "Login" : "Sign Up"}</Button>
-                        </div>
-                        </Link>
+                            <div className="d-grid mt-4">
+                                <Button disabled={loading} variant="success" type="submit" >Sign Up</Button>
+                            </div>
+                        </Form>
                     </div>
 
                 </Col >

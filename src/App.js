@@ -5,23 +5,22 @@ import Signup from "./components/Screens/Signup";
 import Profile from "./components/Screens/Profile";
 import LandingPage from "./components/Screens/LandingPage";
 import Productscreen from "./components/Screens/Productscreen";
-
+import {AuthProvider} from "./contexts/AuthContext";
+import PrivateRoute from "./PrivateRoute";
 
 function App() {
-  let history = useHistory();
-  return (
+  return ( 
     <Router>
+      <AuthProvider>
       <Switch>
-        <Route exact path="/">
-          <LandingPage />
-        </Route>
-
+        <PrivateRoute exact path="/" component={LandingPage}  />
+          
         <Route path="/login">
-          <Signup />
+          <Login />
         </Route>
 
         <Route path="/signup">
-          <Login />
+          <Signup />
         </Route>
 
         <Route path="/profile">
@@ -31,6 +30,7 @@ function App() {
         <Route path="/product/:id" render={(props) => <Productscreen {...props} />} />
 
       </Switch>
+    </AuthProvider>
     </Router>
   );
 }

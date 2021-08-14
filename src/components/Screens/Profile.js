@@ -1,19 +1,48 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import Form from "../Sub-comp/Form";
 import { Button, Row, Col, Image, ListGroup } from "react-bootstrap";
-import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Link, Switch, Route, useHistory } from "react-router-dom";
 import Header from "../Sub-comp/Header"
 import Footer from "../Sub-comp/Footer"
 import Inputgroup from "../Partials/Inputgroup";
-import { Navbar, Container, Nav } from "react-bootstrap";
+
+
+import {useAuth} from "../../contexts/AuthContext"
 
 function Profile() {
+
+    const [error,setError]=useState("");
+    const {currentUser,logout}=useAuth();
+    const history = useHistory();
+    const [email,setemail]=useState()
+
+
+    useEffect(()=>{
+        setemail(currentUser.email);
+    },[])
+    
+    
+    async function handleLogout()
+    {
+        setError('')
+
+        try{
+            await logout()
+            setemail("");
+            history.push("/login")
+
+        } catch{
+            setError('Failed to logout')
+        }
+    }
+
     return (
         <div>
             <Header />
             <Inputgroup />
             <main >
                 <br />
+                <Button variant="link" onClick={handleLogout}>Log Out</Button>
                 <div style={{ display: "flex", justifyContent: "center" }} >
                     <div>
                         <h1>User Profile</h1>
@@ -29,7 +58,7 @@ function Profile() {
                             <div class="form-group">
                                 <fieldset>
                                     <label class="form-label mt-4" for="readOnlyInput">Readonly input</label>
-                                    <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here..." readonly="" />
+                                    <input class="form-control" id="readOnlyInput" type="text" placeholder={email} readonly="" />
                                 </fieldset>
                             </div>
 
