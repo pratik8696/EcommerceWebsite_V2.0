@@ -57,7 +57,7 @@ function Profile() {
                         <Col xl={6} lg={6} md={6} sm={6} xs={6} >
                             <div class="form-group">
                                 <fieldset>
-                                    <label class="form-label mt-4" for="readOnlyInput">Readonly input</label>
+                                    <label class="form-label mt-4" for="readOnlyInput">Email Id</label>
                                     <input class="form-control" id="readOnlyInput" type="text" placeholder={email} readonly="" />
                                 </fieldset>
                             </div>
@@ -66,7 +66,7 @@ function Profile() {
                         <Col xl={6} lg={6} md={6} sm={6} xs={6} >
                             <div class="form-group">
                                 <fieldset>
-                                    <label class="form-label mt-4" for="readOnlyInput">Readonly input</label>
+                                    <label class="form-label mt-4" for="readOnlyInput">Phone Number</label>
                                     <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here..." readonly="" />
                                 </fieldset>
                             </div>
@@ -80,7 +80,7 @@ function Profile() {
                         <Col xl={6} lg={6} md={6} sm={6} xs={6} >
                             <div class="form-group">
                                 <fieldset>
-                                    <label class="form-label mt-4" for="readOnlyInput">Readonly input</label>
+                                    <label class="form-label mt-4" for="readOnlyInput">First Name</label>
                                     <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here..." readonly="" />
                                 </fieldset>
                             </div>
@@ -89,7 +89,7 @@ function Profile() {
                         <Col xl={6} lg={6} md={6} sm={6} xs={6} >
                             <div class="form-group">
                                 <fieldset>
-                                    <label class="form-label mt-4" for="readOnlyInput">Readonly input</label>
+                                    <label class="form-label mt-4" for="readOnlyInput">Last Name</label>
                                     <input class="form-control" id="readOnlyInput" type="text" placeholder="Readonly input here..." readonly="" />
                                 </fieldset>
                             </div>
