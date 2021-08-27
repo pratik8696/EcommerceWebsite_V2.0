@@ -15,28 +15,28 @@ function Header() {
                     <div className="collapse navbar-collapse" id="navbarColor03">
                         <ul className="navbar-nav me-auto ms-4">
                             <li className="nav-item">
-                                <a className="nav-link active" href="#">Home
+                                <a className="nav-link active">Home
                                     <span className="visually-hidden">(current)</span>
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Top Deals</a>
+                                <a className="nav-link">Top Deals</a>
                             </li>
                             <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Departments</a>
+                                <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Departments</a>
                                 <div className="dropdown-menu">
-                                    <a className="dropdown-item" href="#">Action</a>
-                                    <a className="dropdown-item" href="#">Another action</a>
-                                    <a className="dropdown-item" href="#">Something else here</a>
+                                    <a className="dropdown-item" >Action</a>
+                                    <a className="dropdown-item" >Another action</a>
+                                    <a className="dropdown-item" >Something else here</a>
                                     <div className="dropdown-divider"></div>
-                                    <a className="dropdown-item" href="#">Separated link</a>
+                                    <a className="dropdown-item" >Separated link</a>
                                 </div>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Contact Us</a>
+                                <a className="nav-link" >Contact Us</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">About Us</a>
+                                <a className="nav-link" >About Us</a>
                             </li>
                         </ul>
                         <form className="d-flex">
